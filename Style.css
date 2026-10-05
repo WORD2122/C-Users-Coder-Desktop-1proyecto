@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    background-color: #e9ecf4;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+
+
+
+.contenedor {
+    max-width: 1400px;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 15px;
+
+    grid-template-columns: 2fr 1fr;
+}
+
+
+
+
+nav {
+    grid-column: 1 / 3;
+
+    background: linear-gradient(90deg, #ff9f43, #ff6b6b);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+/* TÍTULO DEL MENÚ */
+
+nav h2 {
+    margin-bottom: 10px;
+}
+
+
+/* ENLACES */
+
+.menu a {
+    color: white;
+    text-decoration: none;
+
+    margin: 0 15px;
+
+    font-weight: bold;
+}
+
+
+/* EFECTO DEL RATÓN */
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* BOTÓN HAMBURGUESA */
+
+.button-toggle {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* CONTENIDO */
+
+.contenido {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* TÍTULO */
+
+.contenido h1 {
+    color: #ff5c5c;
+
+    margin-bottom: 15px;
+}
+
+
+/* PÁRRAFOS */
+
+.contenido p {
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+/* BOTÓN */
+
+#cambia-color {
+    background-color: #ff9f43;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+
+/* FOTO */
+
+.sidebar {
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+.foto {
+    width: 100%;
+
+    max-width: 300px;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+}
+
+
+/* ESTADÍSTICAS */
+
+.estadisticas {
+    grid-column: 1 / 3;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+.estadistica {
+    background-color: #3b82f6;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+/* CUANDO PASAMOS EL RATÓN */
+
+.estadistica:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px #999;
+}
+
+
+.estadistica h2 {
+    font-size: 30px;
+
+    margin-bottom: 5px;
+}
+
+
+/* LOGROS */
+
+.bloque {
+    background-color: #3498db;
+
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+.bloque h2 {
+    margin-bottom: 15px;
+}
+
+
+.bloque li {
+    margin-bottom: 8px;
+}
+
+
+/* LÍNEA DEL TIEMPO */
+
+.evento {
+    background-color: white;
+
+    color: #222;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border-radius: 8px;
+}
+
+
+.evento h3 {
+    color: #3498db;
+}
+
+
+/* SIGNIFICADO */
+
+.significado {
+    grid-column: 1 / 3;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+.significado h2 {
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    grid-column: 1 / 3;
+
+    background-color: #3923a3;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+.siuuu {
+    font-size: 25px;
+
+    margin-top: 10px;
+}
+
+
+/* ======================== */
+/* 📱 MÓVIL */
+/* ======================== */
+
+@media (max-width: 700px) {
+
+    .contenedor {
+        margin: 10px;
+
+        grid-template-columns: 1fr;
+    }
+
+
+    nav {
+        grid-column: 1;
+    }
+
+
+    .sidebar {
+        grid-column: 1;
+    }
+
+
+    .estadisticas {
+        grid-column: 1;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .bloque {
+        grid-column: 1;
+    }
+
+
+    .significado {
+        grid-column: 1;
+    }
+
+
+    footer {
+        grid-column: 1;
+    }
+
+
+    /* MOSTRAMOS EL BOTÓN */
+
+    .button-toggle {
+        display: block;
+
+        margin: auto;
+    }
+
+
+    /* ESCONDEMOS EL MENÚ */
+
+    .menu {
+        display: none;
+
+        margin-top: 15px;
+    }
+
+
+    /* CUANDO JAVASCRIPT PONE "open" */
+
+    .menu.open {
+        display: block;
+    }
+
+
+    .menu a {
+        display: block;
+
+        margin: 10px;
+    }
+}
+
+
+/* MODO OSCURO */
+
+body.oscuro {
+    background-color: #111827;
+    color: white;
+}
+
+body.oscuro .contenido,
+body.oscuro .sidebar,
+body.oscuro .significado,
+body.oscuro .evento {
+    background-color: #1f2937;
+    color: white;
+}
