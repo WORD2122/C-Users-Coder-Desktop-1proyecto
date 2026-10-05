@@ -1,0 +1,34 @@
+README :# ⚽ Proyecto Web: Cristiano Ronaldo
+
+¡Bienvenido a mi primer proyecto de desarrollo web! Esta página está dedicada a **Cristiano Ronaldo**, destacando su trayectoria, logros y momentos clave a través de un diseño responsive e interactivo.
+
+---
+
+## 🌟 Secciones de la Página
+
+El sitio está organizado en 3 secciones principales:
+
+1. **Biografía e Inicio:** Un recorrido por los comienzos de su carrera y su evolución como futbolista profesional.
+2. **Estadísticas y Títulos:** Resumen de sus récords, balones de oro, Champions League y logros individuales/colectivos.
+3. **Galería / Highlights:** Momentos icónicos y momentos destacados de su carrera.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- **HTML5:** Estructura semántica del contenido.
+- **CSS3:** Estilos personalizados, diseño responsive (adaptable a móviles y escritorio) y navegación lateral/superior.
+- **JavaScript:** Interactividad de la página y comportamiento dinámico del menú de navegación.
+
+
+![Vista previa del proyecto](./assets/preview.png)
+
+---
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+No se requieren dependencias externas para ejecutar este proyecto.
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/nombre-del-repositorio.git](WORD2122)
